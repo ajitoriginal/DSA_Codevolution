@@ -94,4 +94,20 @@ OBJECT vs MAP
 readily available with the size property in a map
 --Apart from storing data, you can attach functionality to an object whereas
 maps are restricted to  just storing data
+
+STACK
+--The stack data structure is a sequential collection of elements that follows the principle of
+Last In First Out (LIFO)
+--The last element added to the stack is the first one to be removed
+--A stack of plates. The last plate added to the stack is the first one to be removed
+--Stack is an abstract data type. It is defined by its behavior rather than being a
+mathematical model
+--The stack data structure supports two main operations
+  Push - Add an element to the top of the stack
+  Pop - Remove the top element from the stack
+--Stack usage
+  Browser history tracking
+  Undo/Redo functionality when typing
+  Expression conversions and evaluations
+  Call stack in JavaScript run-time
 */
