@@ -53,4 +53,45 @@ ARRAY - BIG-O TIME COMPLEXITY
 --Push/Pop - O(1)
 --Shift/unshift/concat/slice/splice - O(n)
 --forEach/map/filter/reduce - O(n)
+
+OBJECT
+--An object is an unordered collection of key-value pairs. The key must either
+be a string or symbol data type where as the value can be of any data type
+--To retrieve a value, you can use the corresponding key. This can be achieved
+using the dot notation or bracket notation
+--An object is not an iterable. You cannot use it with a for of loop
+
+OBJECT - BIG-O TIME COMPLEXITY
+--Insert/Remove/Access - O(1)
+--Search/Object.keys/Object.values/Object.entries - O(n)
+
+SET
+--A set is a data structure that can hold a collection of values. The values however
+must be unique
+--Set can contain a mix of different data types. You can store string, booleans, numbers
+or even objects all in the same set
+--Sets are dynamically sized. You don't have to declare the size of a set before creating it
+--Sets do not maintain an insertion order
+--Sets are iterables. They can be used with a for of loop
+
+SET vs ARRAY
+--Arrays can contain duplicate values whereas sets cannot
+--Arrays maintain an insertion order whereas sets do not
+--Searching and deleting an element in the set is faster than in an array
+
+MAP
+--A map is an unordered collection of key-value pairs. Both keys and values
+can be of any data type
+--To retrieve a value, you can use the corresponding key
+--Maps are iterables. They can be used with a for of loop
+
+OBJECT vs MAP
+--Objects are unordered whereas maps are ordered
+--Keys in objects can only be strings or symbols whereas keys in maps can be of any data type
+--An object has a prototype and may contain default keys whereas a map does not
+--Objects are not iterables whereas maps are
+--The number of items in an object must be determined manually where as it is
+readily available with the size property in a map
+--Apart from storing data, you can attach functionality to an object whereas
+maps are restricted to  just storing data
 */
