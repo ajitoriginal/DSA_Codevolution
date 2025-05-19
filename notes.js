@@ -126,4 +126,19 @@ mathematical model
   Call center systems
   Task scheduling in operating systems
   Callback queue in JavaScript
+
+CIRCULAR QUEUE
+--The size of the queue is fixed and a single block of memory is used as if the
+first element us connected to the last element
+--Also referred to as circular buffer or ring buffer and follows the FIFO principle
+--A circular queue will reuse the empty block created during the dequeue operation
+--When working with queues with fixed maximum size, a circular queue is a great
+implementation choice
+--The circular queue data structure supports two main operations
+  Enqueue - Add an element to the end/rear/tail of the queue
+  Dequeue - Remove the first/front/head element from the queue
+--Circular queue usage
+  Clock
+  Streaming data
+  Traffic lights
 */
