@@ -110,4 +110,20 @@ mathematical model
   Undo/Redo functionality when typing
   Expression conversions and evaluations
   Call stack in JavaScript run-time
+
+QUEUE
+--The queue data structure is a sequential collection of elements that follows
+the principle of First In First Out (FIFO)
+--The first element added to the queue is the first one to be removed
+--A queue of people waiting in line. The first person to arrive is the first one to be served
+--Queue is an abstract data type. It is defined by its behavior rather than being a
+mathematical model
+--The queue data structure supports two main operations
+  Enqueue - Add an element to the end/rear/tail of the queue
+  Dequeue - Remove the first/front/head element from the queue
+--Queue usage
+  Print job scheduling
+  Call center systems
+  Task scheduling in operating systems
+  Callback queue in JavaScript
 */
