@@ -141,4 +141,18 @@ implementation choice
   Clock
   Streaming data
   Traffic lights
+
+LINKED LIST
+--A linked list is a linear data structure that includes a series of connected nodes
+--Each node consists of a data value and a pointer that points to the next node
+--The list elements can be easily inserted or removed without reallocation or reorganization
+of the entire structure
+--Random access of elements is not feasible and accessing an element has linear time complexity
+--The linked list data structure supports three main operations
+  Insertion -  to add an element to the list
+  Deletion - to remove an element from the list
+  Searching - to find an element in the list
+--Linked list usage
+  All applications of both stacks and queues are applications of linked lists
+  Image viewer
 */
