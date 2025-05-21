@@ -112,6 +112,21 @@ class LinkedList {
         }
     }
 
+    search(value) {
+        if(!this.isEmpty()) {
+            let i = 0
+            let current = this.head
+            while(current) {
+                if(current.value === value) {
+                    return i
+                }
+                current = current.next
+                i++
+            }    
+        }
+        return -1
+    }
+
     print() {
         if(this.isEmpty()) {
             console.log('List is empty')
@@ -148,26 +163,28 @@ console.log(`size: ${list.getSize()}`)
 list.insert(6, 58)
 list.print()
 console.log(`size: ${list.getSize()}`)
-list.removeFrom(2)
+// list.removeFrom(2)
+// list.print()
+// console.log(`size: ${list.getSize()}`)
+// list.removeValue(55)
+// list.print()
+// console.log(`size: ${list.getSize()}`)
+// list.removeValue(30)
+// list.print()
+// console.log(`size: ${list.getSize()}`)
+// list.removeValue(58)
+// list.print()
+// console.log(`size: ${list.getSize()}`)
+// list.removeValue(40)
+// list.print()
+// console.log(`size: ${list.getSize()}`)
+// list.removeValue(40)
+// list.print()
+// console.log(`size: ${list.getSize()}`)
+// list.removeValue(50)
+// list.removeValue(100)
+// list.removeValue(20)
 list.print()
+
 console.log(`size: ${list.getSize()}`)
-list.removeValue(55)
-list.print()
-console.log(`size: ${list.getSize()}`)
-list.removeValue(30)
-list.print()
-console.log(`size: ${list.getSize()}`)
-list.removeValue(58)
-list.print()
-console.log(`size: ${list.getSize()}`)
-list.removeValue(40)
-list.print()
-console.log(`size: ${list.getSize()}`)
-list.removeValue(40)
-list.print()
-console.log(`size: ${list.getSize()}`)
-list.removeValue(50)
-list.removeValue(100)
-list.removeValue(20)
-list.print()
-console.log(`size: ${list.getSize()}`)
+console.log('Search : ', list.search(55))
