@@ -155,4 +155,22 @@ of the entire structure
 --Linked list usage
   All applications of both stacks and queues are applications of linked lists
   Image viewer
+
+HASH TABLE
+--A hash table, also known as hash map, is a data structure that is used to store key-value pairs
+--Given a key, you can associate a value with that key for very fast lookup
+--We store the key value pairs in a fix sized array
+--Arrays have a numeric index
+--How do we go from using a string as an index to number as an index?
+--A hashing function accepts the string key, converts it into a hash code using a defined logic
+and them maps it into a numeric index that is within the bounds of the array
+--Using the index, store the value
+--The same hashing function is reused to retrieve the value given a key
+  Set to store a key-value pair
+  Get to retrieve a value given its key
+  Remove to delete a key value pair
+--Hash Table Usage
+  Hash tables are typically implemented where constant time lookup and insertion are required
+  Database indexing
+  Caches  
 */
