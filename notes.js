@@ -207,4 +207,11 @@ BINARY TREE
   Searching
   Sorting
   To implement abstract data types such as lookup table and priority queues
+--Depth First Search(DFS)
+  --In a depth first search, we start at the root node and explore as far as possible along each branch before backtracking
+  --Visit the root node, visit all the nodes in the left subtree, then visit all the nodes in the right subtree
+  --Depending on the order of traversal, there are three types of depth first search
+  --Pre-order - Visit the root node, then visit the left subtree, then visit the right subtree
+  --In-order - Visit the left subtree, then visit the root node, then visit the right subtree
+  --Post-order - Visit the left subtree, then visit the right subtree, then visit the root node
 */
