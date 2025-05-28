@@ -190,4 +190,21 @@ the data set
   DOM
   Chat bots
   Abstract syntax trees
+
+BINARY TREE
+--A binary tree is a tree data structure in which each node has at most two children
+--The children are referred to as the left child and the right child
+--The value of the left child is less than the value of the parent node
+--The value of the right child is greater than the value of the parent node
+--Each node in a binary tree can have at most two children
+--Binary search tree has the following operations
+  Insert - Add a new node to the tree
+  Search - Find a node in the tree
+  Delete - Remove a node from the tree
+  DFS - Traverse the tree in depth first manner
+  BFS - Traverse the tree in breadth first manner
+--Binary tree usage
+  Searching
+  Sorting
+  To implement abstract data types such as lookup table and priority queues
 */
