@@ -173,4 +173,21 @@ and them maps it into a numeric index that is within the bounds of the array
   Hash tables are typically implemented where constant time lookup and insertion are required
   Database indexing
   Caches  
+
+TREE
+--A tree is a hierarchical data structure that consists of nodes
+connected by edges
+--A tree is a non-linear data structure, compared to arrays, linked lists, stacks and queues
+which are linear data structures.
+--In linear data structures, the time required to search is proportional to the size of
+the data set
+--Trees however, owing to the nonlinear nature allow quicker and easier access to data
+--A tree will not contain any loops or cycles
+--Tree Usage
+  File systems for directory structure
+  A family tree
+  An organisation tree
+  DOM
+  Chat bots
+  Abstract syntax trees
 */
