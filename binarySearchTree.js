@@ -79,19 +79,43 @@ class BinarySearchTree {
   }
 
   levelOrder() { //BFS
-    const queue = []
-    queue.push(this.root)
-    let curr;
-    while(queue.length) {
-      curr = queue.shift()
-      console.log(curr.value)
-      if(curr.left) {
-        queue.push(curr.left)
-      }
-      if(curr.right) {
-        queue.push(curr.right)
+    if(!this.isEmpty()) {
+      const queue = []
+      queue.push(this.root)
+      let curr;
+      while(queue.length) {
+        curr = queue.shift()
+        console.log(curr.value)
+        if(curr.left) {
+          queue.push(curr.left)
+        }
+        if(curr.right) {
+          queue.push(curr.right)
+        }
       }
     }
+  }
+
+  min(root) {
+    if(!this.isEmpty()) {
+      if(!root.left) {
+        return root.value
+      } else {
+        return this.min(root.left)
+      }
+    }
+    return null
+  }
+
+  max(root) {
+    if(!this.isEmpty()) {
+      if(!root.right) {
+        return root.value
+      } else {
+        return this.max(root.right)
+      }
+    }
+    return null
   }
 }
 
@@ -115,3 +139,7 @@ console.log(`---------postOrder`)
 bst.postOrder(bst.root)
 console.log(`---------levelOrder`)
 bst.levelOrder()
+console.log(`---------minValue`)
+console.log(`minValue: ${bst.min(bst.root)}`)
+console.log(`---------maxValue`)
+console.log(`maxValue: ${bst.max(bst.root)}`)
