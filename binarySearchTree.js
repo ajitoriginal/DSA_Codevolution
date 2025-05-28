@@ -54,7 +54,7 @@ class BinarySearchTree {
     }
   }
 
-  preOrder(root) {
+  preOrder(root) { //DFS PreOrder
     if(root) {
         console.log(root.value)
         this.preOrder(root.left)
@@ -62,7 +62,7 @@ class BinarySearchTree {
     }
   }
 
-  inOrder(root) {
+  inOrder(root) { //DFS InOrder
     if(root) {
       this.inOrder(root.left)
       console.log(root.value)
@@ -70,11 +70,27 @@ class BinarySearchTree {
     }
   }
 
-  postOrder(root) {
+  postOrder(root) { //DFS PostOrder
     if(root) {
       this.postOrder(root.left)
       this.postOrder(root.right)
       console.log(root.value)
+    }
+  }
+
+  levelOrder() { //BFS
+    const queue = []
+    queue.push(this.root)
+    let curr;
+    while(queue.length) {
+      curr = queue.shift()
+      console.log(curr.value)
+      if(curr.left) {
+        queue.push(curr.left)
+      }
+      if(curr.right) {
+        queue.push(curr.right)
+      }
     }
   }
 }
@@ -97,3 +113,5 @@ console.log(`---------inOrder`)
 bst.inOrder(bst.root)
 console.log(`---------postOrder`)
 bst.postOrder(bst.root)
+console.log(`---------levelOrder`)
+bst.levelOrder()
